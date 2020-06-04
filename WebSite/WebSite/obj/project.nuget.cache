@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "sfhc6FvmQZ0TDOfpOGaWzTkMSt69URo+kiJw4N0XLpL8yef43m4YDDhauPgDNUH7nsdf2UHq5SiGnjc7uQncow==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Sergei\\Documents\\GitKrakenProjects\\AspWebSite\\WebSite\\WebSite\\WebSite.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sergei\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
