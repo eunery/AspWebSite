@@ -1,0 +1,133 @@
+﻿<head>
+    <style>
+        button{
+        width: 50px;
+        height: 50px;
+        }
+        .white{
+        background-color: white;
+        }
+        .black{
+        background-color: black;
+        }
+    </style>
+     <script>
+        var figure;
+        var from;
+        var to;
+        var firstStep = true;
+        function changeFigure(sender) {
+          figure = sender.value;
+        }
+        
+        function CheckStep(sender) {
+            if(firstStep){
+                    from = sender.id;
+                    firstStep = false
+                }
+            else{
+                to = sender.id;
+                let req = new XMLHttpRequest();
+                req.open("GET", `/Home/IsTurnRight?figure=${figure}&from=${from}&to=${to}`);
+                req.send();
+                req.onreadystatechange = function(){
+                    if(req.readyState === 4) {
+                        if(req.responseText === "true")
+                             alert("true");
+                        else alert("false");
+                         
+                    }
+                }
+                firstStep = true;
+            }
+        }
+        
+     </script>
+</head>
+<body>
+
+    <div class="desk">
+        <button class="white" value="w" id="a8" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="b8" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="c8" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="d8" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="e8" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="f8" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="g8" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="h8" onclick="CheckStep(this)"></button>
+        <select onchange="changeFigure(this)">
+            <option> choose figure </option>
+            <option value="p"> Pawn </option>
+            <option value="b"> Bishop </option>
+            <option value="r"> Rook </option>
+            <option value="n"> Knight </option>
+            <option value="q"> Queen </option>
+            <option value="k"> King </option>
+        </select>
+        <b>выбирай падла</b>
+        <br>
+        <button class="black" value="b" id="a7" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="b7" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="c7" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="d7" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="e7" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="f7" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="g7" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="h7" onclick="CheckStep(this)"></button>
+        <br>
+        <button class="white" value="w" id="a6" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="b6" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="c6" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="d6" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="e6" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="f6" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="g6" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="h6" onclick="CheckStep(this)"></button>
+        <br>
+        <button class="black" value="b" id="a5" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="b5" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="c5" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="d5" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="e5" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="f5" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="g5" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="h5" onclick="CheckStep(this)"></button>
+        <br>
+        <button class="white" value="w" id="a4" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="b4" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="c4" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="d4" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="e4" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="f4" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="g4" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="h4" onclick="CheckStep(this)"></button>
+        <br>
+        <button class="black" value="b" id="a3" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="b3" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="c3" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="d3" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="e3" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="f3" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="g3" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="h3" onclick="CheckStep(this)"></button>
+        <br>
+        <button class="white" value="w" id="a2" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="b2" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="c2" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="d2" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="e2" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="f2" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="g2" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="h2" onclick="CheckStep(this)"></button>
+        <br>
+        <button class="black" value="b" id="a1" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="b1" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="c1" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="d1" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="e1" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="f1" onclick="CheckStep(this)"></button>
+        <button class="black" value="b" id="g1" onclick="CheckStep(this)"></button>
+        <button class="white" value="w" id="h1" onclick="CheckStep(this)"></button>
+        <br>
+        </div>
+</body>

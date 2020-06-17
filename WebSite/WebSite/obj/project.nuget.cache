@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "sfhc6FvmQZ0TDOfpOGaWzTkMSt69URo+kiJw4N0XLpL8yef43m4YDDhauPgDNUH7nsdf2UHq5SiGnjc7uQncow==",
+  "dgSpecHash": "eTXrpA712mWg2/T+2kQQIhCBm8W5xpTro+gnrJPpuhqu5g2OhgZW/5usjYlnSPb1w5h898v7onnZRZXxZm0TIA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sergei\\Documents\\GitKrakenProjects\\AspWebSite\\WebSite\\WebSite\\WebSite.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Sergei\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Sergei\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Sergei\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\Sergei\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
   "logs": []
